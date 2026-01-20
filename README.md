@@ -9,21 +9,21 @@
 
 User Registration (Email & Password)
 
-User Login with JWT Token
+User Login using JWT Authentication
 
-Protected APIs (Only logged-in users can access tasks)
+Protected APIs (only authenticated users can access tasks)
 
-Secure token-based authentication
+Secure token handling on frontend
 
 📝 Task Management
 
 Create new tasks
 
+View task list (user-specific)
+
 Update existing tasks
 
 Delete tasks
-
-View personal task list
 
 Filter tasks by status:
 
@@ -33,53 +33,45 @@ In Progress
 
 Completed
 
-📊 Task Fields
+Due date support for tasks
 
-Title
+📦 Backend (Django + DRF)
 
-Description
+Django REST Framework based APIs
 
-Status
+JWT Authentication
 
-Due Date
+User-specific task access
 
-Created & Updated timestamps
+Input validation & proper error handling
 
-Created by (linked to authenticated user)
+Pagination for task listing
 
-🧩 Tech Stack
-Frontend
+Relational database support (PostgreSQL / SQLite)
 
-⚛️ React (with Hooks)
+🎨 Frontend (React)
 
-Axios for API requests
+Built using React Hooks
 
-React Router for navigation
+Pages:
 
-Material UI / Bootstrap / Tailwind (UI Styling)
+Login
 
-Backend
+Register
 
-🐍 Django
+Dashboard (Task List)
 
-Django REST Framework
+Add / Edit Task Form
 
-JWT Authentication (Simple JWT)
+Features:
 
-PostgreSQL / SQLite Database
+JWT token storage & usage
 
-Bonus
+API integration
 
-🐳 Docker support (optional)
+Loading & error states
 
-🔗 API Endpoints
-Authentication
-Method	Endpoint	Description
-POST	/api/auth/register/	Register user
-POST	/api/auth/login/	Login user (JWT)
-Tasks
-Method	Endpoint	Description
-GET	/api/tasks/	List user tasks (Paginated)
-POST	/api/tasks/	Create new task
-PUT	/api/tasks/:id/	Update task
-DELETE	/api/tasks/:id/	Delete task
+Status-based task filtering
+
+Clean & responsive UI
+(Material UI / Bootstrap / Tailwind CSS)
